@@ -3,8 +3,13 @@ import SubCompany from './SubCompany'
 
 class Company extends Component {
   render() {
-    return {/* your code here */ }
+    let explodedRevenue = this.props.revenue * 100
 
+    return (
+      <div>
+        <SubCompany name={this.props.name} key={this.props.name}/>
+      </div>
+    )
   }
 }
 

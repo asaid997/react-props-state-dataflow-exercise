@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 
 class Item extends Component {
     render() {
-        return {/* your code here */ }
+        const {price, discount, item} = this.props.item
+        return (
+            <div>{item} {this.props.shouldDiscount ? price * (1-discount) : price}</div>
+        )
 
     }
 }
